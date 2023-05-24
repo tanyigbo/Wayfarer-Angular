@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { CitiesComponent } from './cities/cities.component';
 
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { CitiesComponent } from './cities/cities.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule, MatButtonModule, MatMenuModule, MatIconModule, 
-    LandingPageModule, 
+    LandingPageModule, MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
