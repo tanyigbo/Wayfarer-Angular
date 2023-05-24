@@ -6,9 +6,9 @@
     </mat-card-content>
     <mat-card-actions>
     <div class="example-button-row">
-        <button class="btn-width" mat-fab extended color="primary">
+        <button *ngFor="let c of cities_count; let i of names" class="btn-width" mat-fab extended color="primary">
             <mat-icon>favorite</mat-icon>
-            Primary
+            <pre>{{i}}</pre>
         </button>
     </div>
     </mat-card-actions>
