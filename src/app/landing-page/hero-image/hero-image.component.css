@@ -1,0 +1,9 @@
+img {
+    max-height: 100%;
+    max-width: 80%;
+    display: block;
+}
+
+.travel {
+    background-color: rgb(226, 192, 192);
+}
