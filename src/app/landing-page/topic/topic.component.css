@@ -1,9 +1,12 @@
 div {
-  margin-top: 5px;
+  margin-top: 25px;
   display: flex;
+
 }
 
 .example-card {
+  border: solid 2px;
+  border-color: grey;
   max-width: 300px;
   background-color: white;
 }
