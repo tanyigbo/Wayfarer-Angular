@@ -6,17 +6,27 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+
+import { LandingPageModule } from './landing-page/landing-page.module';
+import { CitiesComponent } from './cities/cities.component';
+
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent, 
+    CitiesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule, MatButtonModule, MatMenuModule, MatIconModule, 
+    LandingPageModule, MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
