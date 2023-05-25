@@ -1,21 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { Subject, debounceTime, distinctUntilChanged } from 'rxjs';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
-export class SearchComponent implements OnInit {
 
-  searchInput: string = '';
+export class SearchComponent {
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  searchTopics(searchInput: string) {
-    console.log(`Searching Topics for ${searchInput}`);
-  }
-
 }
