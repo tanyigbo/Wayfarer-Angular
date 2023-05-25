@@ -11,7 +11,9 @@ import { CitiesComponent } from './cities/cities.component';
 import { SearchComponent } from './search/search.component';
 import { PostCardComponent } from './post-card/post-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { ShowPostComponent } from './show-post/show-post.component';
 import { CityDisplayComponent } from './city-display/city-display.component';
+
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { CityDisplayComponent } from './city-display/city-display.component';
     SearchComponent, 
     PostCardComponent, 
     FooterComponent, 
-    CityDisplayComponent
+    CityDisplayComponent,
+    ShowPostComponent,
   ],
   imports: [
     BrowserModule,

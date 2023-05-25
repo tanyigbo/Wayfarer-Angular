@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeroImageComponent } from '../app/landing-page/hero-image/hero-image.component';
 import { CitiesComponent } from './cities/cities.component';
 import { CityDisplayComponent } from './city-display/city-display.component';
+import { ShowPostComponent } from './show-post/show-post.component';
+
 
 const routes: Routes = [
   {
@@ -17,7 +19,11 @@ const routes: Routes = [
     ]
   },
   {
-    path: '**',
+    path:'cities/1/post/1',  // specific city specific post
+    component: ShowPostComponent
+  },
+  {
+    path: '**',  // wildcard
     component: HeroImageComponent
   },
 ];
