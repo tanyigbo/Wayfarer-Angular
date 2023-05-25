@@ -12,8 +12,6 @@ export const posts =
             city: "London",
             posts:
                 [
-                    {
-                    }
                 ],
         },
         {
