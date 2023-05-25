@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { cities } from '../../assets/data/cities';
 
 @Component({
   selector: 'app-cities',
@@ -6,7 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cities.component.css']
 })
 export class CitiesComponent {
-  cities_count = new Array(4);
-  names: string[] = ["San Francisco", "London", "Sydney", "Seattle"];
-
+  cityData = cities;
 }
