@@ -11,13 +11,11 @@ import { Observable } from 'rxjs';
 export class NavComponent {
   displaySearchBar: boolean = false;
 
-  constructor(private router: Router,) {
-    this.router.events.pipe(
-      filter((event) => event instanceof NavigationEnd),
-      map(event => console.log(event)));
+  displaySearch(): void {
+    this.displaySearchBar = true;
   }
 
-  displaySearch(searchNeeded: boolean): void {
-    this.displaySearchBar = searchNeeded;
+  hideSearch(): void {
+    this.displaySearchBar = false;
   }
 }

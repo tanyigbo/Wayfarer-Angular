@@ -1,19 +1,23 @@
 export let cities =
     [
         {
-            cityName: 'Test San Francisco',
+            id: 1,
+            cityName: 'San Francisco',
             imgAddres: 'image1'
         },
         {
-            cityName: 'Test London',
+            id: 2,
+            cityName: 'London',
             imgAddres: 'image2'
         },
         {
-            cityName: 'Test Sydney',
+            id: 3,
+            cityName: 'Sydney',
             imgAddres: 'image2'
         },
         {
-            cityName: 'Test Seattle',
+            id: 4,
+            cityName: 'Seattle',
             imgAddres: 'image4'
         },
     ]
