@@ -1,21 +1,24 @@
 <mat-toolbar color="primary">
-    
+
     <span>Wayfarer</span>
     <span class="example-spacer"></span>
     <div class="main">
-    <div class="menu">
-        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-        <mat-menu #menu="matMenu">
-        <button routerLink="/" mat-menu-item>Home</button>
-        <button routerLink="/cities" mat-menu-item>Cities</button>
-        </mat-menu>
+        <div class="menu">
+            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+            <mat-menu #menu="matMenu">
+                <button (click)="hideSearch()" routerLink="/" mat-menu-item>Home</button>
+                <button (click)="displaySearch()" routerLink="/cities" mat-menu-item>Cities</button>
+            </mat-menu>
+        </div>
     </div>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+
+    <div class="search" *ngIf="(displaySearchBar)">
+        <app-search></app-search>
     </div>
-    <span class="example-spacer"></span>
-    <span class="example-spacer"></span>
-    <span class="example-spacer"></span>
-    <span class="example-spacer"></span>
+
     <span class="example-spacer"></span>
 </mat-toolbar>
-<router-outlet></router-outlet>
-
