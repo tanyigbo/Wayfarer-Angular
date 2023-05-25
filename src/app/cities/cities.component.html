@@ -9,28 +9,15 @@
 
         <mat-card-actions>
             <div class="example-button-row">
-                <button *ngFor="let city of cityData" class="btn-width" mat-fab extended color="primary">
+                <button *ngFor="let city of cityData" routerLink="{{city.id}}" class="btn-width" mat-fab extended
+                    color="primary">
                     <mat-icon>favorite</mat-icon>
-                    <pre>{{city.cityName}}</pre>
+                    <pre>{{city.city}}</pre>
                 </button>
             </div>
         </mat-card-actions>
     </mat-card>
 
-    <mat-card class="posts">
-        <mat-card-actions>
-            <div class="active-city">
-                <div class="city-info">
-                    <mat-card-title>London</mat-card-title>
-                    <mat-card-subtitle>United Kingdom</mat-card-subtitle>
-                    <img class="city-image" src="{{cityData[cityId].imgAddres}}">
-                </div>
+    <router-outlet></router-outlet>
 
-                <div class="city-posts">
-                    <mat-card-title>Posts</mat-card-title>
-                    <app-post-card></app-post-card>
-                </div>
-            </div>
-        </mat-card-actions>
-    </mat-card>
 </div>

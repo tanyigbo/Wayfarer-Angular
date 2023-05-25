@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { posts } from 'src/assets/data/posts';
 
@@ -7,16 +7,16 @@ import { posts } from 'src/assets/data/posts';
   templateUrl: './post-card.component.html',
   styleUrls: ['./post-card.component.css']
 })
-export class PostCardComponent {
+export class PostCardComponent implements OnInit {
   postData: any;
-  postDataReverse: any;
-  cityId: number;
+  cityId: any;
 
-  constructor(protected router: Router) {
-    //this.cityId = parseInt(router.url.substring(-1));
+  constructor(protected router: Router) { }
 
-    // /cities/{cityId}/{postId}
-    this.cityId = 0;
+  ngOnInit(): void {
+    this.cityId = parseInt(this.router.url.slice(-1));
     this.postData = posts[this.cityId].posts.reverse();
   }
+
+
 }
