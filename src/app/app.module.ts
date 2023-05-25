@@ -12,13 +12,20 @@ import { SearchComponent } from './search/search.component';
 import { PostCardComponent } from './post-card/post-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShowPostComponent } from './show-post/show-post.component';
+import { CityDisplayComponent } from './city-display/city-display.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent, 
-    CitiesComponent, SearchComponent, PostCardComponent, FooterComponent, ShowPostComponent
+    CitiesComponent, 
+    SearchComponent, 
+    PostCardComponent, 
+    FooterComponent, 
+    CityDisplayComponent,
+    ShowPostComponent,
   ],
   imports: [
     BrowserModule,
