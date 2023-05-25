@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialUiModule } from './material-ui/material-ui.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialUiModule } from './material-ui/material-ui.module';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -20,7 +20,8 @@ import { SearchComponent } from './search/search.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    LandingPageModule, MaterialUiModule,
+    LandingPageModule,
+    MaterialUiModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
