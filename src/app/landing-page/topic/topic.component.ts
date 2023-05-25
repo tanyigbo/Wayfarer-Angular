@@ -8,5 +8,5 @@ import { TOPICS } from '../topic/topics'
   styleUrls: ['./topic.component.css']
 })
 export class TopicComponent {
-  topics2 = TOPICS;
+  topics = TOPICS;
 }
