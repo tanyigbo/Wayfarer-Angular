@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -6,13 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent {
-  displaySearchBar: boolean = false;
-
-  displaySearch(): void {
-    this.displaySearchBar = true;
-  }
-
-  hideSearch(): void {
-    this.displaySearchBar = false;
-  }
+  constructor(protected router: Router) { }
 }
