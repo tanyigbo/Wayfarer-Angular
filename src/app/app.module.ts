@@ -18,7 +18,11 @@ import { CityDisplayComponent } from './city-display/city-display.component';
   declarations: [
     AppComponent,
     NavComponent, 
-    CitiesComponent, SearchComponent, PostCardComponent, FooterComponent, CityDisplayComponent
+    CitiesComponent, 
+    SearchComponent, 
+    PostCardComponent, 
+    FooterComponent, 
+    CityDisplayComponent
   ],
   imports: [
     BrowserModule,

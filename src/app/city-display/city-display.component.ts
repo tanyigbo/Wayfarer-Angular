@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { cities } from 'src/assets/data/cities';
 
 @Component({
@@ -12,16 +12,13 @@ export class CityDisplayComponent implements OnInit {
   cityData: any
   cityId: any;
 
-  constructor(protected router: Router) {
-    this.cityId = parseInt(this.router.url.slice(-1));
+  constructor(protected router: Router, private route: ActivatedRoute) {
     this.cityData = cities;
   }
 
   ngOnInit(): void {
-    console.log("Testing");
-
-  }
-  updatePage(value: number): void {
-    this.cityId = value;
+    this.route.params.subscribe(params => {
+      this.cityId = params['id'];
+    });
   }
 }
