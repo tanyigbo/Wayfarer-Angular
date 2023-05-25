@@ -14,12 +14,13 @@ import { LandingPageModule } from './landing-page/landing-page.module';
 import { CitiesComponent } from './cities/cities.component';
 
 import {MatCardModule} from '@angular/material/card';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent, 
-    CitiesComponent
+    CitiesComponent, SearchComponent
   ],
   imports: [
     BrowserModule,
