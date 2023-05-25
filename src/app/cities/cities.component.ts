@@ -9,8 +9,11 @@ import { posts } from '../../assets/data/posts';
 })
 export class CitiesComponent implements OnInit {
   cityData = cities;
+  cityId: number = 0;
 
+  constructor() {
 
+  }
   ngOnInit(): void {
   }
 }

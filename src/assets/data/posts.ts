@@ -1,6 +1,33 @@
 export const posts =
     [
         {
+            city: "London",
+            posts:
+                [
+
+                    { 
+                        title: 'In London...',
+                        content: `In London, everyone is different, and that means anyone can 
+                        fit in.`,
+                        author: 'Paddington Bear'
+                    },
+                    { 
+                        title: 'London is a cluster of communities...',
+                        content: `London is a cluster of communities, great and small, 
+                        famous and unsung; a city of contrasts, a congregation of 
+                        diversity.`,
+                        author: 'Roy Porter'
+                    },
+                    { 
+                        title: 'London is a city ',
+                        content: `London is a city that has reinvented itself upon the remains
+                         of the past.`,
+                        author: 'Leo Hollis'
+                    }
+
+                ],
+        },
+        {
             city: "San Francisco",
             posts:
                 [
@@ -28,33 +55,6 @@ export const posts =
                         earthquake and fire.`,
                         author: 'Candy M.'
                     }
-                ],
-        },
-        {
-            city: "London",
-            posts:
-                [
-
-                    { 
-                        title: 'In London...',
-                        content: `In London, everyone is different, and that means anyone can 
-                        fit in.`,
-                        author: 'Paddington Bear'
-                    },
-                    { 
-                        title: 'London is a cluster of communities...',
-                        content: `London is a cluster of communities, great and small, 
-                        famous and unsung; a city of contrasts, a congregation of 
-                        diversity.`,
-                        author: 'Roy Porter'
-                    },
-                    { 
-                        title: 'London is a city ',
-                        content: `London is a city that has reinvented itself upon the remains
-                         of the past.`,
-                        author: 'Leo Hollis'
-                    }
-
                 ],
         },
         {

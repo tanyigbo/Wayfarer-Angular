@@ -13,10 +13,10 @@ export class PostCardComponent {
   cityId: number;
 
   constructor(protected router: Router) {
-    //this.cityId = parseInt(router.url.substring(-1)) - 1;
+    //this.cityId = parseInt(router.url.substring(-1));
 
     // /cities/{cityId}/{postId}
-    this.cityId = 1;
+    this.cityId = 0;
     this.postData = posts[this.cityId].posts.reverse();
   }
 }
