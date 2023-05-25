@@ -1,6 +1,6 @@
 <div>
-<mat-card *ngFor="let s of titles;let t = index" class="example-card">
-    <mat-card-header><mat-card-title>{{s}}</mat-card-title></mat-card-header>
-    <mat-card-content><p>{{topics[t]}}</p></mat-card-content>
-</mat-card>
+    <mat-card *ngFor="let topic of topics2;index of i" class="example-card">
+        <mat-card-header><mat-card-title>{{topic.title}}</mat-card-title></mat-card-header>
+        <mat-card-content><p>{{topic.topic}}</p></mat-card-content>
+    </mat-card>
 </div>
