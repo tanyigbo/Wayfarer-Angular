@@ -9,12 +9,13 @@ import { NavComponent } from './nav/nav.component';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { CitiesComponent } from './cities/cities.component';
 import { SearchComponent } from './search/search.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent, 
-    CitiesComponent, SearchComponent
+    CitiesComponent, SearchComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
