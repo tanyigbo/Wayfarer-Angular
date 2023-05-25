@@ -6,8 +6,8 @@
         <div class="menu">
             <button mat-button [matMenuTriggerFor]="menu">Menu</button>
             <mat-menu #menu="matMenu">
-                <button (click)="hideSearch()" routerLink="/" mat-menu-item>Home</button>
-                <button (click)="displaySearch()" routerLink="/cities" mat-menu-item>Cities</button>
+                <button routerLink="/" mat-menu-item>Home</button>
+                <button routerLink="/cities" mat-menu-item>Cities</button>
             </mat-menu>
         </div>
     </div>
@@ -16,7 +16,7 @@
     <span class="example-spacer"></span>
     <span class="example-spacer"></span>
 
-    <div class="search" *ngIf="(displaySearchBar)">
+    <div class="search" *ngIf="router.url ==='/cities'">
         <app-search></app-search>
     </div>
 

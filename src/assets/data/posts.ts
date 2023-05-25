@@ -34,6 +34,7 @@ export const posts =
             city: "London",
             posts:
                 [
+
                     { 
                         title: 'In London...',
                         content: `In London, everyone is different, and that means anyone can 
@@ -53,6 +54,7 @@ export const posts =
                          of the past.`,
                         author: 'Leo Hollis'
                     }
+
                 ],
         },
         {
