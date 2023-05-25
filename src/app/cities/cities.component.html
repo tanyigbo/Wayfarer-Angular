@@ -1,33 +1,36 @@
-<mat-card class="example-card">
+<div class="cities">
+    <mat-card class="example-card">
+        <mat-card-header>
+            Cities
+        </mat-card-header>
 
-    <mat-card-header>
-        Cities
-    </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
 
-    <mat-card-content>
-    </mat-card-content>
-
-    <mat-card-actions>
-        <div class="example-button-row">
-            <button *ngFor="let city of cityData" class="btn-width" mat-fab extended color="primary">
-                <mat-icon>favorite</mat-icon>
-                <pre>{{city.cityName}}</pre>
-            </button>
-        </div>
-    </mat-card-actions>
-
-    <mat-card-actions>
-        <div class="active-city">
-            <div class="city-info">
-                <mat-card-title>London</mat-card-title>
-                <mat-card-subtitle>United Kingdom</mat-card-subtitle>
-                <!-- <img src="../../assets/images/london.jpg"> -->
+        <mat-card-actions>
+            <div class="example-button-row">
+                <button *ngFor="let city of cityData" class="btn-width" mat-fab extended color="primary">
+                    <mat-icon>favorite</mat-icon>
+                    <pre>{{city.cityName}}</pre>
+                </button>
             </div>
-            
-            <div class="city-posts">
-                <mat-card-title>Posts</mat-card-title>
-            </div>
-        </div>
-    </mat-card-actions>
+        </mat-card-actions>
+    </mat-card>
 
-</mat-card>
+    <mat-card class="posts">
+        <mat-card-actions>
+            <div class="active-city">
+                <div class="city-info">
+                    <mat-card-title>London</mat-card-title>
+                    <mat-card-subtitle>United Kingdom</mat-card-subtitle>
+                    <img class="city-image" src="../../assets/images/london.jpg">
+                </div>
+
+                <div class="city-posts">
+                    <mat-card-title>Posts</mat-card-title>
+                    <app-post-card></app-post-card>
+                </div>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>

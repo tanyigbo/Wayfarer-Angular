@@ -1,7 +1,16 @@
+.cities,
+.posts {
+    display: flex;
+}
+
 mat-card {
     max-width: 40%;
 }
 
 .btn-width {
     width: 250px;
+}
+
+.city-image {
+    height: 200px;
 }

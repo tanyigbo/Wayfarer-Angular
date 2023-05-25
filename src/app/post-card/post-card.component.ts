@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { posts } from 'src/assets/data/posts';
 
 @Component({
@@ -7,5 +8,15 @@ import { posts } from 'src/assets/data/posts';
   styleUrls: ['./post-card.component.css']
 })
 export class PostCardComponent {
-  postData = posts;
+  postData: any;
+  postDataReverse: any;
+  cityId: number;
+
+  constructor(protected router: Router) {
+    //this.cityId = parseInt(router.url.substring(-1)) - 1;
+
+    // /cities/{cityId}/{postId}
+    this.cityId = 1;
+    this.postData = posts[this.cityId].posts.reverse();
+  }
 }
