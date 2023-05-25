@@ -11,13 +11,14 @@ import { CitiesComponent } from './cities/cities.component';
 import { SearchComponent } from './search/search.component';
 import { PostCardComponent } from './post-card/post-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { ShowPostComponent } from './show-post/show-post.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent, 
-    CitiesComponent, SearchComponent, PostCardComponent, FooterComponent
+    CitiesComponent, SearchComponent, PostCardComponent, FooterComponent, ShowPostComponent
   ],
   imports: [
     BrowserModule,
