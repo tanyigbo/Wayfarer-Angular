@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { cities } from '../../assets/data/cities';
-import { posts } from '../../assets/data/posts';
 
 @Component({
   selector: 'app-cities',
@@ -9,11 +8,12 @@ import { posts } from '../../assets/data/posts';
 })
 export class CitiesComponent implements OnInit {
   cityData = cities;
-  cityId: number = 0;
 
-  constructor() {
-
-  }
   ngOnInit(): void {
+    console.log("Testing Cities");
+  }
+
+  showChange(): void {
+    console.log("Showing change");
   }
 }
