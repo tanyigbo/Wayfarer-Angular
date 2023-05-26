@@ -1,4 +1,4 @@
-<div class="post-card" *ngFor="let post of postData">
+<div class="post-card" *ngFor="let post of postData[cityId].posts">
     <img src="" alt="">
     <mat-card-subtitle>{{post.title}}</mat-card-subtitle>
     <p>{{post.content}}</p>

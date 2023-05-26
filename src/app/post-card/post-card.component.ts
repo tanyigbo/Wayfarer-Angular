@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { posts } from 'src/assets/data/posts';
 
 @Component({
@@ -11,12 +11,12 @@ export class PostCardComponent implements OnInit {
   postData: any;
   cityId: any;
 
-  constructor(protected router: Router) { }
+  constructor(protected router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.cityId = parseInt(this.router.url.slice(-1));
-    this.postData = posts[this.cityId].posts.reverse();
+    this.route.params.subscribe(params => {
+      this.cityId = params['id'];
+    });
+    this.postData = posts;
   }
-
-
 }
