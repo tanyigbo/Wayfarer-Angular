@@ -7,7 +7,7 @@ import axios from 'axios'
 })
 
 export class WeatherService {
-    private apiKey = '';
+    private apiKey = '62d308ad62832561583c79af0b3b556c';
 
     async getCurrentWeather(cityName: string): Promise<any> {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${this.apiKey}`
