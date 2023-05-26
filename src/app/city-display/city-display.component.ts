@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { cities } from 'src/assets/data/cities';
 
 @Component({
@@ -12,13 +12,14 @@ export class CityDisplayComponent implements OnInit {
   cityData: any
   cityId: any;
 
-  constructor(protected router: Router, private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute) {
     this.cityData = cities;
   }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.cityId = params['id'];
+      console.log(params);
     });
   }
 }
