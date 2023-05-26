@@ -3,12 +3,20 @@
     display: flex;
 }
 
+mat-card-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
 mat-card {
     max-width: 40%;
+    margin-top: 10px;
+    margin-left: 18px;
 }
 
 .btn-width {
-    width: 250px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .city-image {
