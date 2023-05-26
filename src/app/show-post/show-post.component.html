@@ -1,12 +1,20 @@
 <div>
     <mat-card class="example-card">
-       <mat-card-title class="title">Title:</mat-card-title>
-        <mat-card-content class="content"><p>testing post tile</p></mat-card-content>
-        <mat-card-title  class="title">Author:</mat-card-title>
-        <mat-card-content class="content"><p>-testing post author</p></mat-card-content>
-        <mat-card-title  class="title">Content:</mat-card-title>
-        <mat-card-content>
-            <textarea matInput readonly>this is a test post</textarea>
+
+        <mat-card-title class="title">Title:</mat-card-title>
+        <mat-card-content class="content">
+            <p>{{activePost.title}}</p>
         </mat-card-content>
+
+        <mat-card-title class="title">Author:</mat-card-title>
+        <mat-card-content class="content">
+            <p>{{activePost.author}}</p>
+        </mat-card-content>
+
+        <mat-card-title class="title">Content:</mat-card-title>
+        <mat-card-content>
+            <textarea matInput readonly>{{activePost.content}}</textarea>
+        </mat-card-content>
+
     </mat-card>
 </div>

@@ -11,7 +11,7 @@ export class PostCardComponent implements OnInit {
   postData: any;
   cityId: any;
 
-  constructor(protected router: Router, private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
