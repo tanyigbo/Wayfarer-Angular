@@ -8,8 +8,23 @@ The Travel Community App is a group project aimed at creating a platform where u
 
 
 ## General Approach 
+1. Project Management: Kanban Board
+2. Collaboration
+3. Clear Goals and Objectives
+4. Roles and Responsibilities 
+5. Effective Communication
+6. Continuous Learning
+7. Code Reviews and Quality Assurance
 
 ## Planing Documentation 
+
+Schedule
+
+User Stories 
+
+Wireframe
+
+Angular Component Architecture
 
 ## User Stories 
 
