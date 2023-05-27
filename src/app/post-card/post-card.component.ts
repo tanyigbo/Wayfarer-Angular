@@ -15,10 +15,10 @@ export class PostCardComponent implements OnInit {
   postData: any;
   cityId: any;
 
-  post: string = '';
+  searchText: string = '';
   contentArray: string[] = [];
-  filteredContent: any;
-  filterCityPost: any;
+  filteredPost: any;
+  cityPost: any;
 
   constructor(protected router: Router, private route: ActivatedRoute,
     private searchService: SearchService) {
@@ -26,32 +26,23 @@ export class PostCardComponent implements OnInit {
       .getPost()
       .pipe(debounceTime(1000), distinctUntilChanged())
       .subscribe((post) => {
-        this.post = post;
+        this.searchText = post;
         this.addFilter();
       });
   }
 
   // filter post based on seearch
   addFilter() {
-    console.log("in post card with add filter:  " + this.post);
-    console.log(this.filterCityPost);
-    // console.log(this.postData[0]);
-    this.filterCityPost.forEach((post: any) => {
-      console.log(post);
-      // post.forEach((p: any) => {
-      //   console.log(p);
-        this.contentArray.push(post.content);
-        // this.filteredContent = p;
-      // });
-      console.log(this.contentArray);
-
-    });
-    // console.log(this.contentArray.filter((content) => content.includes(this.post)));
-    // console.log(this.filteredContent);
-    // console.log(this.postData);
-    // console.log(this.cityId);
-    //this.contentArray.filter((content) => content.includes(this.post))
+    this.cityPost.forEach((post: any) => {
+     if (post.content.includes(this.searchText)) {
+        // console.log(post);
+        this.postData[this.cityId] = post; 
+     }
+    })
+    // console.log(this.postData[this.cityId]);
+    
   }
+
 
 
   ngOnInit(): void {
@@ -60,7 +51,7 @@ export class PostCardComponent implements OnInit {
     });
     this.postData = posts;
     // get city post for filtering
-    this.filterCityPost = this.postData[this.cityId].posts;
+    this.cityPost = this.postData[this.cityId].posts;
   }
   
 }
