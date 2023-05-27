@@ -1,44 +1,25 @@
-import { Injectable, OnInit } from '@angular/core';
-import { Observable, Subject, BehaviorSubject } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SearchService implements OnInit {
+export class SearchService  {
 
-  searchedPost: string = '';
-  private post = new BehaviorSubject("");
-  getPost = this.post.asObservable();
 
-  // declare an observable
-   private searchSubject = new Subject();
+  // declare an observable & observer to receive the search input
+  private searchSubject = new Subject<any>();
     
   constructor() { }
 
-  // findPost(post: string) {
-  //   console.log("findpost " + post);
-  //   this.searchSubject.next(post);
-  // }
-
-  setPost(post: string) {
-    console.log(post);
-    this.searchedPost = post;
-    this.post.next(post);
+  // send the value to search w/in post
+  sendPost(post: string) {
+    this.searchSubject.next(post);
   }
-  getSetPost() : string {
-    return this.searchedPost;
+  // return the value
+  getPost() : Observable<any> {
+    return this.searchSubject.asObservable();
   }
 
-  // getPost() : Observable<any> {
-  //   console.log("in getPost")
-  //   return this.searchSubject.asObservable();
-  // }
 
-  ngOnInit(): void {
-    // console.log(this.searchSubject);
-    //   this.searchSubject.subscribe(post => {
-       
-    //     console.log("ngOnit of search service : " + post);
-    //   })
-  }
 }
