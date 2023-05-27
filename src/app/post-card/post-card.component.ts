@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { posts } from 'src/assets/data/posts';
 import { SearchService } from '../search.service';
+import { debounceTime, distinctUntilChanged } from 'rxjs';
 
 
 
@@ -15,10 +16,14 @@ export class PostCardComponent implements OnInit {
   cityId: any;
 
   post: string = '';
+  contentArray: string[] = [];
 
   constructor(protected router: Router, private route: ActivatedRoute,
     private searchService: SearchService) {
-     this.searchService.getPost().subscribe((post) => {
+     this.searchService
+      .getPost()
+      .pipe(debounceTime(1000), distinctUntilChanged())
+      .subscribe((post) => {
         this.post = post;
         this.addFilter();
       });
@@ -27,6 +32,15 @@ export class PostCardComponent implements OnInit {
   // filter post based on seearch
   addFilter() {
     console.log("in post card with add filter:  " + this.post);
+    // console.log(this.postData[0]);
+    this.postData.forEach((post: any) => {
+      post.posts.forEach((p: any) => {
+        this.contentArray.push(p.content);
+      });
+
+    })
+   console.log(this.contentArray.filter((content) => content.includes(this.post)));
+  
   }
 
 

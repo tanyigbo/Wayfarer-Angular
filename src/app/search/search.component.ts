@@ -12,13 +12,12 @@ export class SearchComponent implements OnInit {
 
   post: string = '';
 
-
   constructor(private searchService: SearchService) { }
 
   // get the search input and send to service
   getSearchedPost(event: Event) {
     const filterPost = (event.target as HTMLInputElement).value;
-    this.post = filterPost.trim().toLowerCase();
+    this.post = filterPost;
     this.searchService.sendPost(this.post);
   }
 
