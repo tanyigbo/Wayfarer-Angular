@@ -16,8 +16,6 @@ export class PostCardComponent implements OnInit {
   cityId: any;
 
   searchText: string = '';
-  contentArray: string[] = [];
-  filteredPost: any;
   cityPost: any;
 
   constructor(protected router: Router, private route: ActivatedRoute,
@@ -33,14 +31,20 @@ export class PostCardComponent implements OnInit {
 
   // filter post based on seearch
   addFilter() {
-    this.cityPost.forEach((post: any) => {
+    console.log(this.cityPost);
+    this.cityPost.posts.forEach((post: any) => {
      if (post.content.includes(this.searchText)) {
-        // console.log(post);
-        this.postData[this.cityId] = post; 
+        // post.city = "London";
+        console.log(post);
+       
+        this.postData.posts = post; 
+        // this.cityPost.posts = post;
      }
-    })
-    // console.log(this.postData[this.cityId]);
+    });
     
+    // console.log(this.postData);
+    console.log(this.cityPost.posts);
+    console.log(this.postData.posts);
   }
 
 
@@ -51,7 +55,7 @@ export class PostCardComponent implements OnInit {
     });
     this.postData = posts;
     // get city post for filtering
-    this.cityPost = this.postData[this.cityId].posts;
+    this.cityPost = this.postData[this.cityId];
   }
   
 }
