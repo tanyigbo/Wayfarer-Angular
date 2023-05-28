@@ -20,4 +20,7 @@ export class WeatherService {
             throw error
         }
     }
+
+    test:string = '';
+    
 }

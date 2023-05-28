@@ -10,6 +10,7 @@ import { debounceTime, distinctUntilChanged } from 'rxjs';
   templateUrl: './post-card.component.html',
   styleUrls: ['./post-card.component.css']
 })
+
 export class PostCardComponent implements OnInit {
   postData: any;
   cityId: any;
@@ -17,7 +18,7 @@ export class PostCardComponent implements OnInit {
 
   constructor(protected router: Router, private route: ActivatedRoute,
     private searchService: SearchService) {
-     this.searchService
+    this.searchService
       .getPost()
       .pipe(debounceTime(1000), distinctUntilChanged())
       .subscribe((text) => {
@@ -31,14 +32,14 @@ export class PostCardComponent implements OnInit {
    */
   addFilter() {
     this.postData = posts[this.cityId].posts.filter((eachPost: any) => eachPost.content.includes(this.searchText));
-   
+
     if (this.searchText == '') this.postData = posts[this.cityId].posts;
   }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.cityId = params['id'];
+      this.postData = posts[this.cityId].posts;
     });
-    this.postData = posts[this.cityId].posts;
-  } 
+  }
 }
