@@ -12,6 +12,7 @@ export class CityDisplayComponent implements OnInit {
 
   cityData: any;
   cityId: any;
+  
 
   constructor(
     private route: ActivatedRoute,
@@ -56,6 +57,8 @@ export class CityDisplayComponent implements OnInit {
     // Provide a fallback PNG image URL if imgAddress is undefined or empty
     return 'src/assets/images/golden-gate-bridge.jpeg';
   }
+
+  
   
   
 }
