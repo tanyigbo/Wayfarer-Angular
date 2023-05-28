@@ -8,3 +8,22 @@ mat-card {
 img {
     width: 100%;
 }
+
+
+.city-weather {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .city-weather h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .city-weather p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
