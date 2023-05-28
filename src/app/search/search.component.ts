@@ -10,15 +10,14 @@ import { SearchService } from '../search.service';
 
 export class SearchComponent implements OnInit {
 
-  post: string = '';
+  searchInput: string = '';
 
   constructor(private searchService: SearchService) { }
 
   // get the search input and send to service
-  getSearchedPost(event: Event) {
-    const filterPost = (event.target as HTMLInputElement).value;
-    this.post = filterPost;
-    this.searchService.sendPost(this.post);
+  getSearchedPost(text: string) {
+    this.searchInput = text;
+    this.searchService.sendPost(this.searchInput);
   }
 
   ngOnInit(): void {

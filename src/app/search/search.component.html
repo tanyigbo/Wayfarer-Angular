@@ -1,7 +1,7 @@
 <form class="example-form">
     <mat-form-field class="example-full-width">
-        <input (keyup)="getSearchedPost($event)"
-        name="post" [(ngModel)]="post" 
+        <input (keyup)="getSearchedPost(searchInput)"
+        name="post" [(ngModel)]="searchInput" 
         matInput placeholder="Search posts">
     </mat-form-field>
 </form>
