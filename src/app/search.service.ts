@@ -12,11 +12,16 @@ export class SearchService  {
     
   constructor() { }
 
-  // send the value to search w/in post
+  /**
+   * Method to send the value to search w/in post
+   * @param post String valoe of search text included in post
+   */
   sendPost(post: string) {
     this.searchSubject.next(post);
   }
-  // return the value
+  /**
+   * Method obtains the input value
+   */
   getPost() : Observable<any> {
     return this.searchSubject.asObservable();
   }

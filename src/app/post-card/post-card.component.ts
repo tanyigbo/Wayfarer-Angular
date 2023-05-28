@@ -30,22 +30,13 @@ export class PostCardComponent implements OnInit {
       });
   }
 
-  // filter post based on seearch
+  /**
+   * Method filters specific post based on search criteria
+   */
   addFilter() {
-    this.showFilteredPost = {};
-    console.log(this.showFilteredPost);
-    this.cityPost.posts.forEach((post: any) => {
-     if (post.content.includes(this.searchText)) {
-        console.log(post);
-        posts[this.cityId].posts = [];
-        this.showFilteredPost = post;
-        posts[this.cityId].posts.push(this.showFilteredPost);
-     }
-    });
-    
-    console.log(posts[this.cityId].posts);
-    console.log(this.showFilteredPost);
-    if (this.showFilteredPost.length) this.postData = posts;
+    this.postData = posts[this.cityId].posts.filter((eachPost: any) => eachPost.content.includes(this.searchText));
+   
+    if (this.searchText == '') this.postData = posts[this.cityId].posts;
   }
 
 
@@ -54,11 +45,8 @@ export class PostCardComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.cityId = params['id'];
     });
-    this.postData = posts;
-    // get city post for filtering
-    this.cityPost = this.postData[this.cityId];
+    this.postData = posts[this.cityId].posts;
   }
 
-  
   
 }
