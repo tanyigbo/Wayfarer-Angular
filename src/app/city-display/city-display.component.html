@@ -4,14 +4,24 @@
             <div class="city-info">
                 <mat-card-title>{{cityData[cityId].city}}</mat-card-title>
                 <mat-card-subtitle>{{cityData[cityId].country}}</mat-card-subtitle>
-                <img class="city-image" src="{{cityData[cityId].imgAddres}}">
+                <div class="city-details">
+                    
+                    <img class="city-image" src="{{cityData[cityId].imgAddres}}">
 
-                <div class="city-weather">
-                    <h3>Weather</h3>
-                    <p>Today's High: {{cityData[cityId]?.weather?.main.temp_max}}</p>
-                    <p>Today's Low: {{cityData[cityId]?.weather?.main.temp_min}}</p>
-                    <p>Description: {{cityData[cityId]?.weather?.description}}</p>
-                  </div>
+                    <div class="city-weather">
+                        <h3>Weather</h3>
+                        <p>Today's High: {{cityData[cityId]?.weather?.main.temp_max}}</p>
+                        <p>Today's Low: {{cityData[cityId]?.weather?.main.temp_min}}</p>
+                        <p>Description: It Feels Like {{cityData[cityId]?.weather?.main.feels_like}} with humidity of {{cityData[cityId]?.weather?.main.humidity}} </p>
+                      </div>
+
+                      
+                </div>
+                
+               
+
+                 
+                  
                   
             </div>
 

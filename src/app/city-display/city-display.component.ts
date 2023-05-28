@@ -12,6 +12,7 @@ export class CityDisplayComponent implements OnInit {
 
   cityData: any;
   cityId: any;
+  
 
   constructor(
     private route: ActivatedRoute,
@@ -45,5 +46,19 @@ export class CityDisplayComponent implements OnInit {
       }
     }
   }
+  getValidImageAddress(imgAddress: string): string {
+    if (imgAddress) {
+      if (!imgAddress.toLowerCase().endsWith('.png')) {
+        // Convert non-PNG image URL to PNG format
+        imgAddress = imgAddress.replace(/\.[^/.]+$/, '.png');
+      }
+      return imgAddress;
+    }
+    // Provide a fallback PNG image URL if imgAddress is undefined or empty
+    return 'src/assets/images/golden-gate-bridge.jpeg';
+  }
+
+  
+  
   
 }

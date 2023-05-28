@@ -10,18 +10,18 @@ export let cities =
             id: 1,
             city: 'San Francisco',
             country: 'United States',
-            imgAddres: 'image1'
+            imgAddres: './assets/images/golden-gate-bridge.jpeg'
         },
         {
             id: 2,
             city: 'Sydney',
             country: 'Australia',
-            imgAddres: 'image2'
+            imgAddres: './assets/images/sydney-milsons-point.jpeg'
         },
         {
             id: 3,
             city: 'Seattle',
             country: 'United States',
-            imgAddres: 'image4'
+            imgAddres: './assets/images/seattle.jpeg'
         },
     ]
