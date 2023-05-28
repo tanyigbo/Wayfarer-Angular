@@ -5,7 +5,6 @@ import { SearchService } from '../search.service';
 import { debounceTime, distinctUntilChanged } from 'rxjs';
 
 
-
 @Component({
   selector: 'app-post-card',
   templateUrl: './post-card.component.html',
@@ -14,10 +13,7 @@ import { debounceTime, distinctUntilChanged } from 'rxjs';
 export class PostCardComponent implements OnInit {
   postData: any;
   cityId: any;
-
   searchText: string = '';
-  cityPost: any;
-  showFilteredPost: any;
 
   constructor(protected router: Router, private route: ActivatedRoute,
     private searchService: SearchService) {
@@ -39,14 +35,10 @@ export class PostCardComponent implements OnInit {
     if (this.searchText == '') this.postData = posts[this.cityId].posts;
   }
 
-
-
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.cityId = params['id'];
     });
     this.postData = posts[this.cityId].posts;
-  }
-
-  
+  } 
 }
