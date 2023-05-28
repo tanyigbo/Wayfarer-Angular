@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { SearchService } from '../search.service';
+
 
 @Component({
   selector: 'app-search',
@@ -6,6 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 
-export class SearchComponent {
-  constructor() { }
+export class SearchComponent implements OnInit {
+
+  searchInput: string = '';
+
+  constructor(private searchService: SearchService) { }
+
+  // get the search input and send to service
+  getSearchedPost(text: string) {
+    this.searchInput = text;
+    this.searchService.sendPost(this.searchInput);
+  }
+
+  ngOnInit(): void {
+      
+  }
+
 }
