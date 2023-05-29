@@ -35,9 +35,7 @@ export const posts =
                         title: 'Presidio Tunnel Tops',
                         content: `The perfect outing for everyone, visit the 
                         newly-completed Presidio Tunnel Tops located just south of t
-                        he Golden Gate Bridge and within the Presidio national park. 
-                        This outdoor space features the OUTPOST, a jaw-dropping 
-                        children's play area open year-round.`,
+                        he Golden Gate Bridge and within the Presidio national park.`,
                         author: 'Mary B.'
                     },
                     { 
@@ -54,6 +52,25 @@ export const posts =
                         visitors back to San Francisco after the devastation of the 1906 
                         earthquake and fire.`,
                         author: 'Candy M.'
+                    },
+                    { 
+                        title: 'In San Francisco...',
+                        content: `In San Francisco, everyone is different, and that means anyone can 
+                        fit in.`,
+                        author: 'Bear'
+                    },
+                    { 
+                        title: 'San Francisco is a cluster of communities...',
+                        content: `San Francisco is a cluster of communities, great and small, 
+                        famous and unsung; a city of contrasts, a congregation of 
+                        diversity.`,
+                        author: 'Porter'
+                    },
+                    { 
+                        title: 'San Francisco is a city ',
+                        content: `San Francisco is a city that has reinvented itself upon the remains
+                         of the past.`,
+                        author: 'Leo'
                     }
                 ],
         },
@@ -73,7 +90,7 @@ export const posts =
                     },
                     { 
                         title: 'Coogee to Bondi',
-                        content: `An absolute must when you come to Sydney and a popular route with both tourists and locals. It’s certainly not a hidden gem but there’s room for everyone and you’ll most likely be joined by runners as you go.`,
+                        content: `An absolute must when you come to Sydney and a popular route with both tourists and locals. It’s certainly not a hidden gem but there’s room for everyone.`,
                         author: 'Candy M.'
                     }
                 ],

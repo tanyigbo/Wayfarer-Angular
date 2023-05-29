@@ -33,13 +33,13 @@ export class PostCardComponent implements OnInit {
   addFilter() {
     this.postData = posts[this.cityId].posts.filter((eachPost: any) => eachPost.content.includes(this.searchText));
 
-    if (this.searchText == '') this.postData = posts[this.cityId].posts;
+    if (this.searchText == '') this.postData = posts[this.cityId].posts.slice().reverse();
   }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.cityId = params['id'];
-      this.postData = posts[this.cityId].posts;
+      this.postData = posts[this.cityId].posts.slice().reverse();
     });
   }
 }

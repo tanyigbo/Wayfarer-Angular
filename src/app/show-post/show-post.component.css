@@ -1,6 +1,11 @@
+.active-post {
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .example-card {
-    margin-top: 30px;
-    margin-left: 50px;
     max-width: 350px;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgb(216, 187, 187);
@@ -14,11 +19,4 @@
 .content {
     cursor: not-allowed;
     color: #d2c9c9;
-}
-
-textarea {
-    background-color: #eee;
-    cursor: not-allowed;
-    resize: vertical;
-    width: 300px;
 }
