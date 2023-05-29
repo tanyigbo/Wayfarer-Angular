@@ -91,7 +91,7 @@ We are thankfull and appreciative for the awesome articles and pictures of the v
 We appreciate your interest in the Travel Community App.  If you have any questions and/or feedback, please reach out to the project team at :
 - [Tobe Anyigbo](https://www.linkedin.com/in/tobe-anyigbo-a29b5173)
 - [Wanda Avery](https://www.linkedin.com/in/wanda-simien-avery-48588a1bb)
-- [Gene Brown]()
+- [Gene Brown](https://www.linkedin.com/in/eugene-brown-jr-38210b99/)
 
 ## License
 ![Bower](https://img.shields.io/bower/l/MI)
