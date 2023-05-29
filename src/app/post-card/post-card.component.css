@@ -1,0 +1,24 @@
+
+.post-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-card mat-card-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .post-card mat-card-subtitle a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .post-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  

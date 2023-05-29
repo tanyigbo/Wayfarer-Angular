@@ -8,3 +8,41 @@ mat-card {
 img {
     width: 100%;
 }
+
+
+.city-weather {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .city-weather h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .city-weather p {
+    font-size: 14px;
+    margin: 10px;
+    
+  }
+  
+  .city-image {
+    width: 200px; /* Adjust the width to your desired size */
+    height: 200px; /* Adjust the height to your desired size */
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .city-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .city-details {
+    display: flex;
+    align-items: flex-start;
+  }
+  

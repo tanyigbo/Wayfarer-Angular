@@ -13,13 +13,13 @@ const routes: Routes = [
     component: CitiesComponent, // this should be the cities component
     children: [
       {
-        path:':id',
-        component:CityDisplayComponent
+        path: ':id',
+        component: CityDisplayComponent
       }
     ]
   },
   {
-    path:'cities/1/post/1',  // specific city specific post
+    path: 'cities/:id/post/:id',  // specific city specific post
     component: ShowPostComponent
   },
   {

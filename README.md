@@ -1,24 +1,26 @@
-# Wayfarer Travel App
+# Project Wayfarer: A  Travel Community Application
 ![Logo](./images/Wayfarer-Branded/logo.png)
 The Wayfarer Travel App is a group project aimed at creating a platform where users can share city-specific tips, experiences, and recommendations. 
 
+A travel community application to share sightseeing around their favorite locations.
 Whether it's a hidden gem, a must-visit landmark, a local restaurant, or a unique cultural experience, this app allows travelers to discover and contribute valuable information about their favorite locations around the world.
 
-## Features
+  # Table of Contents
+- [Project Overview](#project-overview)
+- [Project Planning](#project-planning)
+- [User Stories](#user-stories)
+- [Installation](#installation)
+- [Contribution](#contributing)
+- [Wins & Hurdles](#wins--hurdles)
+- [Technologies Used](#technologies-used)
+- [Credits](#credits)
 
-- Search Functionality: Users can search for specific cities and posts to find relevant information quickly.
+## Project Overview
+Our team concurred to build a community travel application aimed at creating a platform where users can share city-specific tips, experiences, and recommendations. Whether it's a hidden gem, a must-visit landmark, a local restaurant, or a unique cultural experience, this app allows travelers to discover and contribute valuable information about their favorite locations around the world.
 
+Once you follow the installation instructions to interact with the application via your browser, you are greeted with an enthusiastic recreational vehicle on the homepage.  From the 'Menu' option on the toolbar, you can click on the 'Cities' menu option.  From the 'Cities' page you can view an iconic picture of that city, current weather conditions, view and access shared city's post, with the newest post first.  To access a specific post to view the post's author, title and content, just click that post's title to view on the 'Show' post page.  You will be able to navigate back 'Home' or 'Cities' page via the menu on the toolbar.
 
-## General Approach 
-1. Project Management: Kanban Board
-![Kanban](./images/Wayfarer-Branded/kanban.png)
-2. Collaboration
-![Git Teams](./images/GitTeams.png)
-3. Clear Goals and Objectives
-4. Roles and Responsibilities 
-5. Effective Communication
-6. Continuous Learning
-7. Code Reviews and Quality Assurance
+Also, from the 'Cities' page you will be able to search all posts for a specific city when you type in the 'Search City's Post' section on the toolbar.
 
 ## Planning Documentation 
 
@@ -85,12 +87,15 @@ The following technologies and tools are used in this project:
   
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
   
-  
-</div>
- 
+## Wins & Hurdles
+<ins>Wanda Avery</ins> - Implementing the 'Search City's Post' feature:  Learning a little more about observers, observable, and subject (RxJs) components. This was needed to get the two components to communicate through a shared service.  Then getting the correct data to view/show in the component once the filtered results returned or not and then show the initial set of posts once text was removed.  Thanks to Tobe, the feature was implemented as seen in the application.
 
-
-## 📖 Getting Started
+## Technologies Used
+- Angular
+- TypeScript
+- Material UI
+- HTML/CSS
+- Open Weather API
 
 ## Installation
 To run the Travel Community App locally, follow these steps:
@@ -106,11 +111,22 @@ To run the Travel Community App locally, follow these steps:
 ## 👥 Contributing
 
 We welcome contributions from the community to enhance the Travel Community App. If you have any ideas, bug fixes, or improvements, please submit a pull request. 
-
 Make sure to follow the existing code style and guidelines. You can also create new issues to report bugs or suggest new features.
 
-## 📝 References 
+## 📝 Credits 
+We appreciate the time and effort follow developers put into making suggestions and code snippets available on [Stack Overflow](https://stackoverflow.com/) regarding anything Angular.
 
+We are thankfull and appreciative for the awesome articles and pictures of the vairies cities:
+[World Wide Honey](https://worldwidehoneymoon.com/seattle-3-day-itinerary-weekend-trip-to-seattle/)<br>
+[Nomadic Matt](https://www.nomadicmatt.com/travel-guides/united-states-travel-guide/seattle/)<br>
+[freepik](https://www.freepik.com/free-photo/montreal-river-sunset-with-city-lights-urban-buildings_29452819.htm#query=seattle%20city&position=4&from_view=keyword&track=ais)<br>
+[istock](https://www.istockphoto.com/photo/union-jacks-on-oxford-street-for-the-queens-platinum-jubilee-gm1399934799-453662293?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Flondon&utm_term=london%3A%3A%3A)<br>
+
+## Contact
+We appreciate your interest in the Travel Community App.  If you have any questions and/or feedback, please reach out to the project team at :
+- [Tobe Anyigbo](https://www.linkedin.com/in/tobe-anyigbo-a29b5173)
+- [Wanda Avery](https://www.linkedin.com/in/wanda-simien-avery-48588a1bb)
+- [Gene Brown](https://www.linkedin.com/in/eugene-brown-jr-38210b99/)
 
 ## 🔐 License
 ![Bower](https://img.shields.io/bower/l/MI)

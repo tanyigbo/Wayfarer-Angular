@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { cities } from 'src/assets/data/cities';
+import { WeatherService } from '../cities/weather.service';
 
 @Component({
   selector: 'app-city-display',
@@ -9,16 +10,38 @@ import { cities } from 'src/assets/data/cities';
 })
 export class CityDisplayComponent implements OnInit {
 
-  cityData: any
+  cityData: any;
   cityId: any;
+  
 
-  constructor(protected router: Router, private route: ActivatedRoute) {
-    this.cityData = cities;
+  constructor(
+    private route: ActivatedRoute,
+    private weatherService: WeatherService
+  ) {
+    this.cityData = cities.map(city => ({
+      ...city,
+      weather: null
+    }));
   }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.cityId = params['id'];
+      this.fetchWeatherData(parseInt(this.cityId, 10));
     });
   }
+  
+
+  async fetchWeatherData(cityId: any): Promise<void> {
+    const city = cities.find(city => city.id === parseInt(cityId, 10));
+    if (city) {
+      try {
+        const weatherData = await this.weatherService.getCurrentWeather(city.city);
+        this.cityData[cityId].weather = weatherData;
+      } catch (error) {
+        console.error(`Error fetching weather data for ${city.city}:`, error);
+      }
+    }
+  } 
+  
 }
