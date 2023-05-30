@@ -12,22 +12,22 @@ Whether it's a hidden gem, a must-visit landmark, a local restaurant, or a uniqu
 - [Planning Documentation](#planning-documentation)
   - [Schedule](#schedule)
   - [User Stories](#user-stories)
-    - [Sprint 1: Landing Page](#📌-sprint-1-landing-page)
-    - [Sprint 2: HomePage](#📌-sprint-2-homepage)
-    - [Sprint 3: Validations](#📌-sprint-3-validations)
-    - [Sprint 4: Weather API](#📌-sprint-4-weather-api)
+    - [Sprint 1: Landing Page](#sprint-1-landing-page)
+    - [Sprint 2: HomePage](#sprint-2-homepage)
+    - [Sprint 3: Validations](#sprint-3-validations)
+    - [Sprint 4: Weather API](#sprint-4-weather-api)
   - [Wireframe](#📐wireframe)
   - [Angular Component Architecture](#angular-component-architecture)
-- [Wins & Hurdles](#❌-hurdles-and-wins )
-- [Tools and Technologies](#🔧-tools-and-technologies)
-- [Tech Stack](#🔨-tech-stack)
+- [Wins & Hurdles](#hurdles-and-wins )
+- [Tools and Technologies](#tools-and-technologies)
+- [Tech Stack](#tech-stack)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#💻-usage)
-- [Contributing](#👥-contributing)
-- [Credits](#📝-credits)
-- [Contact](#📧-contact)
-- [License](#🔐-license)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [Contact](#contact)
+- [License](#license)
 
 
 ## Project Overview
@@ -42,13 +42,13 @@ Also, from the 'Cities' page you will be able to search all posts for a specific
 ### Schedule
 ![Kanban](./images/Wayfarer-Branded/schedule.gif)
 ### User Stories
-####  📌 Sprint 1: Landing Page
+####   Sprint 1: Landing Page
 
 1. As a user, I want to be able to navigate to the website's landing page ("/") and see a basic splash page displaying the name of the website.
 
 2. As a user, I expect to see a site-wide header on every page with a link to the home page and a list of cities.
 
-#### 📌 Sprint 2: HomePage
+####  Sprint 2: HomePage
 
 1. As a user, I want to view the "San Francisco" page ("/cities/1") which includes the site-wide header, the city name, and an iconic photo of the city.
 
@@ -58,7 +58,7 @@ Also, from the 'Cities' page you will be able to search all posts for a specific
 
 4. As a user, I should be able to click on the title of a post and be redirected to a "show" page to view the details of that post.
 
-#### 📌 Sprint 3: Validations
+####  Sprint 3: Validations
 
 1. As a user, I should be able to view city pages for "London" and "Gibraltar".
 
@@ -66,23 +66,23 @@ Also, from the 'Cities' page you will be able to search all posts for a specific
 
 3. As a user, I want to ensure that a post's content cannot be empty.
 
-#### 📌 Sprint 4: Weather API
+####  Sprint 4: Weather API
 
 1. As a user, I want the website to call the Open Weather API for each city to display the current weather on each city's page.
 
-### 📐Wireframe
+### Wireframe
 ![Wireframe](./images/Wayfarer-Branded/wireframe.png)
 
 ### Angular Component Architecture
 
 
-## ❌ Hurdles And Wins 
+##  Hurdles And Wins 
 ![Wireframe](./images/Wayfarer-Branded/hurdles.png)
 <ins>Eugene Brown</ins> - We had some minor disagreements and bug validation errors which were overcome by collaborating effectively and understanding that as a team, Communication is key and we have to communicate constantly and efficiently and be willing to listen to input from others at all times. <br>
 
 <ins>Wanda Avery</ins> - Implementing the 'Search City's Post' feature:  Learning a little more about <b>observers, observable, and subject (RxJs) components.</b> This was needed to get the two components to communicate through a shared service.  Then getting the correct data to view/show in the component once the filtered results returned or not and then show the initial set of posts once text was removed.  Thanks to Tobe, the feature was implemented as seen in the application.
 
-## 🔧 Tools and Technologies 
+##  Tools and Technologies 
 The following technologies and tools are used in this project:
 
 - Angular
@@ -91,7 +91,7 @@ The following technologies and tools are used in this project:
 - Weather API
 
 
-## 🔨 Tech Stack
+##  Tech Stack
 
 <div>
   
@@ -120,15 +120,15 @@ To run the Travel Community App locally, follow these steps:
 3. Run the app locally: `ng serve`
 4. Access the app in your browser at `http://localhost:4200`.
 
-## 💻 Usage 
+##  Usage 
 ![Usage Demo](./images/Wayfarer1.png)
 
-## 👥 Contributing
+##  Contributing
 
 We welcome contributions from the community to enhance the Travel Community App. If you have any ideas, bug fixes, or improvements, please submit a pull request. 
 Make sure to follow the existing code style and guidelines. You can also create new issues to report bugs or suggest new features.
 
-## 📝 Credits 
+##  Credits 
 We appreciate the time and effort follow developers put into making suggestions and code snippets available on [Stack Overflow](https://stackoverflow.com/) regarding anything Angular.
 
 We are thankful and appreciative for the awesome articles and pictures of the vairies cities:
@@ -143,7 +143,7 @@ Branding & GFX
 
 
 
-## 📧 Contact
+## Contact
 We appreciate your interest in the Travel Community App.  If you have any questions and/or feedback, please reach out to the project team at :
 - [Tobe Anyigbo](https://www.linkedin.com/in/tobe-anyigbo-a29b5173)
 - [Wanda Avery](https://www.linkedin.com/in/wanda-simien-avery-48588a1bb)
@@ -151,7 +151,7 @@ We appreciate your interest in the Travel Community App.  If you have any questi
 <a href="https://www.linkedin.com/in/eugene-brown-jr-38210b99/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
 
-## 🔐 License
+## License
 ![Bower](https://img.shields.io/bower/l/MI)
 
 This project is licensed under the [MIT License](LICENSE). Feel free to modify and distribute the code as needed.
