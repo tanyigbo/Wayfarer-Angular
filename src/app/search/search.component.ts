@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../search.service';
 import { ActiveUrlService } from '../active-url.service';
-import { cities } from 'src/assets/data/cities';
 
 
 @Component({
@@ -13,8 +12,7 @@ import { cities } from 'src/assets/data/cities';
 export class SearchComponent implements OnInit {
 
   searchInput: string = '';
-  cityId: number = 0;
-  cityData: any = cities;
+
 
   constructor(
     private searchService: SearchService,
@@ -28,7 +26,6 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
     this.urlService.getActiveUrl().subscribe((url) => {
-      this.cityId = url ? parseInt(url) : 0;
       this.searchInput = '';
     })
   }

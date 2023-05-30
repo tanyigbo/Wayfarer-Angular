@@ -1,8 +1,8 @@
 <form class="example-form">
     <mat-form-field [style.width.px]=250>
-        <input (keyup)="getSearchedPost(searchInput)"
+        <input id="searchInput" (keyup)="getSearchedPost(searchInput)"
         name="post" [(ngModel)]="searchInput" 
-        matInput placeholder="Search {{cityData[cityId].city}} posts">
+        matInput placeholder="Search city's posts">
     </mat-form-field>
 </form>
 
