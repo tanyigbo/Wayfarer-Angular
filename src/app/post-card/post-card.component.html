@@ -1,8 +1,6 @@
-
-<div class="post-card" *ngFor="let post of postData">
-    <img src="" alt="">
-    <mat-card-subtitle>{{post.title}}</mat-card-subtitle>
+<div class="post-card" *ngFor="let post of postData; let i =index">
+    <mat-card-subtitle><a routerLink="post/{{i}}">{{post.title}}</a></mat-card-subtitle>
     <p>{{post.content}}</p>
+
 </div>
 <router-outlet></router-outlet>
-
