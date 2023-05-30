@@ -1,6 +1,6 @@
 <form class="example-form">
-    <mat-form-field class="example-full-width">
-        <input (keyup)="getSearchedPost(searchInput)"
+    <mat-form-field [style.width.px]=250>
+        <input id="searchInput" (keyup)="getSearchedPost(searchInput)"
         name="post" [(ngModel)]="searchInput" 
         matInput placeholder="Search city's posts">
     </mat-form-field>
