@@ -81,13 +81,7 @@ Also, from the 'Cities' page you will be able to search all posts for a specific
 
 <ins>Wanda Avery</ins> - Implementing the 'Search City's Post' feature:  Learning a little more about <b>observers, observable, and subject (RxJs) components.</b> This was needed to get the two components to communicate through a shared service.  Then getting the correct data to view/show in the component once the filtered results returned or not and then show the initial set of posts once text was removed.  Thanks to Tobe, the feature was implemented as seen in the application.
 
-##  Tools and Technologies 
-The following technologies and tools are used in this project:
 
-- Angular
-- TypeScript
-- HTML/CSS
-- Weather API
 
 
 ##  Tech Stack
