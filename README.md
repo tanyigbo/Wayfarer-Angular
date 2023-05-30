@@ -23,7 +23,6 @@ Whether it's a hidden gem, a must-visit landmark, a local restaurant, or a uniqu
 - [Tech Stack](#tech-stack)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [Contact](#contact)
@@ -112,9 +111,6 @@ To run the Travel Community App locally, follow these steps:
 2. Install the necessary dependencies: `npm install`
 3. Run the app locally: `ng serve`
 4. Access the app in your browser at `http://localhost:4200`.
-
-##  Usage 
-![Usage Demo](./images/Wayfarer1.png)
 
 ##  Contributing
 
