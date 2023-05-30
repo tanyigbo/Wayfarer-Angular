@@ -16,7 +16,7 @@ Whether it's a hidden gem, a must-visit landmark, a local restaurant, or a uniqu
     - [Sprint 2: HomePage](#sprint-2-homepage)
     - [Sprint 3: Validations](#sprint-3-validations)
     - [Sprint 4: Weather API](#sprint-4-weather-api)
-  - [Wireframe](#📐wireframe)
+  - [Wireframe](#wireframe)
   - [Angular Component Architecture](#angular-component-architecture)
 - [Wins & Hurdles](#hurdles-and-wins )
 - [Tools and Technologies](#tools-and-technologies)
