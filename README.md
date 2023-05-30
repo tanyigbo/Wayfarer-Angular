@@ -17,7 +17,7 @@ Whether it's a hidden gem, a must-visit landmark, a local restaurant, or a uniqu
     - [Sprint 3: Validations](#sprint-3-validations)
     - [Sprint 4: Weather API](#sprint-4-weather-api)
   - [Wireframe](#wireframe)
-  - [Angular Component Architecture](#angular-component-architecture)
+  
 - [Wins & Hurdles](#hurdles-and-wins )
 - [Tools and Technologies](#tools-and-technologies)
 - [Tech Stack](#tech-stack)
@@ -73,7 +73,6 @@ Also, from the 'Cities' page you will be able to search all posts for a specific
 ### Wireframe
 ![Wireframe](./images/Wayfarer-Branded/wireframe.png)
 
-### Angular Component Architecture
 
 
 ##  Hurdles And Wins 
