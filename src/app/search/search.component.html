@@ -2,7 +2,7 @@
     <mat-form-field class="example-full-width">
         <input (keyup)="getSearchedPost(searchInput)"
         name="post" [(ngModel)]="searchInput" 
-        matInput placeholder="Search city's posts">
+        matInput placeholder="Search {{cityData[cityId].city}} posts">
     </mat-form-field>
 </form>
 
